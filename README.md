@@ -1,6 +1,6 @@
 # ChromaDB API
 
-This microservice will serve as the embeddings database.
+This microservice will run the embeddings database.
 
 
 ## Terraform Usage
@@ -24,9 +24,3 @@ terraform destroy \
 
 
 May need sometime: https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository_deploy_key
-
-## Installing again
-
-Recreating the resource is a good test of this pipeline, but a real CI/CD pipeline is needed.
-
-- Add the deploy key automatically
