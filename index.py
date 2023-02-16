@@ -3,11 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import json
 
-from pydantic import BaseModel
+from embeddings.types import Text
 
-class Text(BaseModel):
-    document: str
-
+from embeddings.index import create_collection
 
 app = FastAPI()
 
